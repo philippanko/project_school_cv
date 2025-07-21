@@ -4,12 +4,12 @@ cv2.namedWindow('mask')
 
 def callback(i): pass
 
-cv2.createTrackbar('lg','mask',20,255, callback)
-cv2.createTrackbar('hg','mask',180,255, callback)
-cv2.createTrackbar('lr','mask',20,255, callback)
-cv2.createTrackbar('hr','mask',180,255, callback)
-cv2.createTrackbar('lb','mask',20,255, callback)
-cv2.createTrackbar('hb','mask',180,255, callback)
+cv2.createTrackbar('lg','mask',10,255, callback)
+cv2.createTrackbar('hg','mask',255,255, callback)
+cv2.createTrackbar('lr','mask',10,255, callback)
+cv2.createTrackbar('hr','mask',255,255, callback)
+cv2.createTrackbar('lb','mask',10,255, callback)
+cv2.createTrackbar('hb','mask',255,255, callback)
 
 cam = cv2.VideoCapture(0)
 

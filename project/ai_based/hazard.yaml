@@ -1,0 +1,8 @@
+train: dataset/train
+val: dataset/validation
+
+nc: 2
+
+names:
+  - flammable_liquid
+  - radioactive4
