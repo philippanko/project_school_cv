@@ -7,9 +7,9 @@ def main():
     print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else "No GPU")
 
     # Load a model
-    model = YOLO("yolo11m-cls.yaml")  # build a new model from YAML
-    model = YOLO("yolo11m-cls.pt")  # load a pretrained model (recommended for training)
-    model = YOLO("yolo11m-cls.yaml").load("yolo11n-cls.pt")  # build from YAML and transfer weights
+    model = YOLO("yolo11n-cls.yaml")  # build a new model from YAML
+    model = YOLO("yolo11n-cls.pt")  # load a pretrained model (recommended for training)
+    model = YOLO("yolo11-cls.yaml").load("yolo11n-cls.pt")  # build from YAML and transfer weights
     model.train(
         data="dataset",
         epochs=100,
